@@ -1,0 +1,44 @@
+mongodb://localhost:27017
+
+Create Connection Request Schema
+Send Connection Request API
+Proper validation of Data
+Corner cases - 4
+$or and $and in MongoDB (Logical Reasoning)
+schema.pre functions
+
+Vicky ignored Bush (682c2a1e7ab9865d164b3afd)
+Vicky interested Rajesh Khanna (682ef9863fb71a88c3e99428)
+Vicky ("Vicky@123") interested Shumacher (682c9d8524fcd50934ae286c)
+Lewis interested in Bush
+Rajesh interested in Bush
+Donald interested in Bush
+Donald interested in Lewis
+Donald ignored Vicky
+Donald ignored Rajesh
+Bush has accepted Lewis's request
+Bush has rejected Rajesh's request
+Bush has accepted Donald's request
+Lewis has accepted Donald's request
+
+Write the API - /request/review/:status/:requestId with proper validations
+TEST
+
+Write the API - Get connections write with $or query
+TEST
+
+Write the /feed API
+TEST - add new User and see the results
+send request to new user and see the results
+new user ignores some user and see the results
+
+Pagination
+- users.skip(skip).limit(limit) are provided by MongoDB, very powerful Read more
+
+/:status/:userId --> params
+/feed?$limit=3&$page=1 --> query
+
+setup Allstate Mongodb local
+Read the prod tables
+See the pre hooks (if any)
+See the ref & populates (if any)
