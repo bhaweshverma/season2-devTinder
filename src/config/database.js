@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const DB_CONNECTION_STRING = "mongodb://localhost:27017/";
+const DB_CONNECTION_STRING =
+  "mongodb+srv://bhaweshverma7:FMzj1bJy7lfQNBqX@cluster-namastenodejs.l2qentf.mongodb.net/"; //"mongodb://localhost:27017/";
 const DATABASE_NAME = "season2-devTinder";
 
 const connectDB = async () => {
