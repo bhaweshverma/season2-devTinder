@@ -33,6 +33,7 @@ connectDB()
     });
   })
   .catch((error) => {
+    //console.log(error.message);
     console.log(`DB did not get connected!`);
   });
 
