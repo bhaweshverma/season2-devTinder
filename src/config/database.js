@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
-const DB_CONNECTION_STRING =
-  "mongodb+srv://bhaweshverma7:eo8B1K8SPOZKB8PW@cluster-namastenodejs.l2qentf.mongodb.net/"; //"mongodb://localhost:27017/";
-const DATABASE_NAME = "season2-devTinder";
+
+console.log(process.env.DB_CONNECTION_STRING + process.env.DATABASE_NAME);
 
 const connectDB = async () => {
-  await mongoose.connect(DB_CONNECTION_STRING + DATABASE_NAME);
+  await mongoose.connect(
+    process.env.DB_CONNECTION_STRING + process.env.DATABASE_NAME
+  );
 };
 
 module.exports = connectDB;

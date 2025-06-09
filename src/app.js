@@ -1,5 +1,6 @@
 const express = require("express");
-const PORT = "3000";
+require("dotenv").config();
+const PORT = process.env.PORT;
 const connectDB = require("./config/database");
 const cookieParser = require("cookie-parser");
 const authRouter = require("./routes/auth");

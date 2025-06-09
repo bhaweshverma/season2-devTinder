@@ -11,10 +11,7 @@ const userAuth = async (req, res, next) => {
     }
 
     // Validate the JWT
-    const decodedData = await jwt.verify(
-      token,
-      "BHAWESH@Dev-Tinder@Season2@0922"
-    );
+    const decodedData = await jwt.verify(token, process.env.JWT_SECRET_KEY);
     const { _id } = decodedData;
 
     const user = await User.findById(_id);
