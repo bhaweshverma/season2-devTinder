@@ -34,7 +34,6 @@ connectDB()
     });
   })
   .catch((error) => {
-    //console.log(error.message);
     console.log(`DB did not get connected!`);
   });
 
@@ -112,7 +111,6 @@ app.patch("/user/:userId", async (req, res) => {
 
     res.send(updatedUser);
   } catch (error) {
-    //console.log(JSON.stringify(error));
     res.status(500).send(error.message + " : " + error?.errors?.gender?.value);
   }
 });
